@@ -28,4 +28,16 @@ void main() {
     t.revPyramid(5);
 //    form diamond
     t.diamond(5);
+//    form binary number triangle
+    t.BinaryNumTriangle(5);
+//    form num crown
+    t.NumCrown(3);
+//    form increasing number triangle
+    t.increaseNumTriangle(5);
+//    form letter triangle
+    t.letterTriangle(5);
+//    form reverse letter triangle
+    t.revLetterTriangle(5);
+//    letter triangle 2
+    t.letterTriangle2(5);
 }
