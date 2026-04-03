@@ -145,13 +145,13 @@ public class Triangle {
 
     public int BinaryNumTriangle(int n) {
         int start;
-        for (int i = 0; i < n; i++){
-            if(i % 2 == 0){
+        for (int i = 0; i < n; i++) {
+            if (i % 2 == 0) {
                 start = 1;
-            }else{
+            } else {
                 start = 0;
             }
-            for(int j = 0; j <= i; j++){
+            for (int j = 0; j <= i; j++) {
                 System.out.print(start);
                 start = 1 - start;
             }
@@ -161,16 +161,16 @@ public class Triangle {
     }
 
     public int NumCrown(int n) {
-        int spaces = 2*(n-1);
+        int spaces = 2 * (n - 1);
 
-        for(int i = 1; i <= n; i++){
-            for(int j = 1; j <= i; j++){
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print(j);
             }
-            for(int j = 1; j <= spaces; j++){
+            for (int j = 1; j <= spaces; j++) {
                 System.out.print(" ");
             }
-            for(int j = i; j >= 1; j--){
+            for (int j = i; j >= 1; j--) {
                 System.out.print(j);
             }
             System.out.println();
@@ -181,8 +181,8 @@ public class Triangle {
 
     public int increaseNumTriangle(int n) {
         int num = 1;
-        for(int i = 1; i <= n; i++){
-            for (int j = 1; j <= i; j++){
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print(num + " ");
                 num += 1;
             }
@@ -219,6 +219,34 @@ public class Triangle {
         for (int i = 0; i < n; i++) {
             char ch = (char) ('A' + i);
             for (int j = 0; j <= i; j++) {
+                System.out.print(ch + " ");
+            }
+            System.out.println();
+        }
+        return "null";
+    }
+
+    public String letterPyramid(int n) {
+        for (int i = 0; i < n; i++) {
+            char ch = 'A';
+            int breakPoint = (2 * i + 1) / 2;
+            for (int j = 0; j < n - i - 1; j++){
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= 2 * i + 1; j++) {
+                System.out.print(ch);
+                // Increment or decrement character
+                if (j <= breakPoint) ch++;
+                else ch--;
+            }
+            System.out.println();
+        }
+        return "null";
+    }
+
+    public String AlphaTriangle(int n) {
+        for (int i = 0; i < n; i++) {
+            for (char ch = (char) ('A' + n - 1 - i); ch <= (char) ('A' + n - 1); ch++) {
                 System.out.print(ch + " ");
             }
             System.out.println();
