@@ -40,4 +40,8 @@ void main() {
     t.revLetterTriangle(5);
 //    letter triangle 2
     t.letterTriangle2(5);
+//    letter pyramid
+    t.letterPyramid(5);
+//    form alpha Triangle
+    t.AlphaTriangle(5);
 }
