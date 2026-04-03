@@ -10,6 +10,8 @@ void main() {
     t.triange(5);
 //    form a reverse right-angled triangle
     t.revTriangle(5);
+//    triangle symmetry
+    t.triangle2(5);
 //    form a num triangle
     t.NumTriangle(5);
 //    num triangle 2
@@ -20,4 +22,10 @@ void main() {
     t.revNumTriangle2(5);
 //    reverse num triangle 3
     t.revNumTriangle3(5);
+//    form a pyramid
+    t.pyramid(5);
+//    form reverse pyramid
+    t.revPyramid(5);
+//    form diamond
+    t.diamond(5);
 }
