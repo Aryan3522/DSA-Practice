@@ -1,4 +1,5 @@
 import StarRectangle.Square;
+import StarRectangle.SymmetricVoid;
 import StarTriangle.Triangle;
 
 void main() {
@@ -44,4 +45,7 @@ void main() {
     t.letterPyramid(5);
 //    form alpha Triangle
     t.AlphaTriangle(5);
+
+    SymmetricVoid sym = new SymmetricVoid();
+    sym.Symmetric_Void(5);
 }
