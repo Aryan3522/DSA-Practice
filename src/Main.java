@@ -5,8 +5,11 @@ import StarTriangle.Triangle;
 void main() {
     Square sq = new Square();
     sq.square(5);
-    //    print a hollow square
+//    print a hollow square
     sq.HollowSquare(5);
+
+//    print number matrix
+    sq.Matrix(5);
 
     Triangle t = new Triangle();
 //    form a right-angled triangle
