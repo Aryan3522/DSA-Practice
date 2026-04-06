@@ -5,6 +5,8 @@ import StarTriangle.Triangle;
 void main() {
     Square sq = new Square();
     sq.square(5);
+    //    print a hollow square
+    sq.HollowSquare(5);
 
     Triangle t = new Triangle();
 //    form a right-angled triangle
@@ -47,5 +49,9 @@ void main() {
     t.AlphaTriangle(5);
 
     SymmetricVoid sym = new SymmetricVoid();
+//    print a void rectangle
     sym.Symmetric_Void(5);
+
+//    print a butterfly
+    sym.Butterfly(5);
 }

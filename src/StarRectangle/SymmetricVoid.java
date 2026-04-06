@@ -35,4 +35,34 @@ public class SymmetricVoid {
         }
         return -1;
     }
+
+//    Butterfly Pattern
+    public int Butterfly(int n) {
+        int spaces = 2*n-2;
+        int stars = 0;
+        for(int i = 1; i<=2*n-1; i++){
+            if(i<=n){
+                stars = i;
+            }else if(i>n){
+                stars = 2*n-i;
+            }
+
+            for(int j = 0; j<stars; j++){
+                System.out.print("*");
+            }
+            for(int j = 0; j<spaces; j++){
+                System.out.print(" ");
+            }
+            for(int j = 0; j<stars; j++){
+                System.out.print("*");
+            }
+            if(i<n){
+                spaces -= 2;
+            }else{
+                spaces += 2;
+            }
+            System.out.println();
+        }
+        return -1;
+    }
 }
