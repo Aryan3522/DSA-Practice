@@ -27,7 +27,7 @@ public class DigitsInNumber {
             newNumber = newNumber * 10 + n % 10;
             n = n / 10;
         }
-        System.out.println(newNumber);
+        System.out.println("Number is: " + newNumber);
         return newNumber;
     }
 
