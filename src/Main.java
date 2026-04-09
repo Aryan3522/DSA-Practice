@@ -1,3 +1,4 @@
+import CountDigits.DigitsInNumber;
 import StarRectangle.Square;
 import StarRectangle.SymmetricVoid;
 import StarTriangle.Triangle;
@@ -5,6 +6,11 @@ import StarTriangle.Triangle;
 void main() {
     Square sq = new Square();
     sq.square(5);
+//    print a hollow square
+    sq.HollowSquare(5);
+
+//    print number matrix
+    sq.Matrix(5);
 
     Triangle t = new Triangle();
 //    form a right-angled triangle
@@ -48,5 +54,28 @@ void main() {
 
 //    Form a Symmetric void rectangle
     SymmetricVoid sym = new SymmetricVoid();
+//    print a void rectangle
     sym.Symmetric_Void(5);
+
+//    print a butterfly
+    sym.Butterfly(5);
+
+//    Count Digits
+    DigitsInNumber c = new DigitsInNumber();
+    c.BruteForce(3522);
+
+//    optimal approach
+//    use Math.log10 to count digits in the given int
+//    also typecast the Math.log10 to int (it takes double by default)
+    c.Optimal(12345678);
+
+//    reverse number
+    c.reverse(12345);
+
+    c.Palindrome(1234);
+    c.Palindrome(121);
+
+//    find gcd
+    c.findGCD(15,20);
+    c.findGCD(36,36);
 }
