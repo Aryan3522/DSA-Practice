@@ -46,6 +46,7 @@ void main() {
 //    form alpha Triangle
     t.AlphaTriangle(5);
 
+//    Form a Symmetric void rectangle
     SymmetricVoid sym = new SymmetricVoid();
     sym.Symmetric_Void(5);
 }
