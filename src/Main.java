@@ -1,3 +1,4 @@
+import CountDigits.ArmStrong;
 import CountDigits.DigitsInNumber;
 import StarRectangle.Square;
 import StarRectangle.SymmetricVoid;
@@ -76,6 +77,10 @@ void main() {
     c.Palindrome(121);
 
 //    find gcd
-    c.findGCD(15,20);
-    c.findGCD(36,36);
+    c.findGCD(15, 20);
+    c.findGCD(36, 36);
+
+//    is ArmStrong
+    ArmStrong ar = new ArmStrong();
+    ar.isArmStrong(153);
 }
