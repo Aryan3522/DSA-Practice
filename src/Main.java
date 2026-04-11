@@ -1,5 +1,6 @@
 import CountDigits.ArmStrong;
 import CountDigits.DigitsInNumber;
+import CountDigits.PrimeNumber;
 import CountDigits.PrintDivisors;
 import StarRectangle.Square;
 import StarRectangle.SymmetricVoid;
@@ -89,4 +90,8 @@ void main() {
     PrintDivisors pd = new PrintDivisors();
 //    pd.Divisors(5);
     pd.Divisors(36);
+
+//    isPrime?
+    PrimeNumber pn = new PrimeNumber();
+    pn.isPrime(41);
 }
