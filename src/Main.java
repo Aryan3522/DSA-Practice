@@ -1,5 +1,6 @@
 import CountDigits.ArmStrong;
 import CountDigits.DigitsInNumber;
+import CountDigits.PrintDivisors;
 import StarRectangle.Square;
 import StarRectangle.SymmetricVoid;
 import StarTriangle.Triangle;
@@ -83,4 +84,9 @@ void main() {
 //    is ArmStrong
     ArmStrong ar = new ArmStrong();
     ar.isArmStrong(153);
+
+//    Print Divisors
+    PrintDivisors pd = new PrintDivisors();
+//    pd.Divisors(5);
+    pd.Divisors(36);
 }
