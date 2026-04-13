@@ -6,6 +6,7 @@ import PrintN.PrintName;
 import StarRectangle.Square;
 import StarRectangle.SymmetricVoid;
 import StarTriangle.Triangle;
+import sum.SumN;
 
 void main() {
     Square sq = new Square();
@@ -102,4 +103,14 @@ void main() {
     Nnumbers nm = new Nnumbers();
     nm.printNumbers(5, 1);
     nm.printNumbers1(5, 1);
+    System.out.println();
+
+//    Sum of n numbers
+    SumN s = new SumN();
+//    using brute force
+    s.sum(5);
+//    using formula
+    s.sum1(5);
+//    using recursion
+    System.out.println("recursive approach: " + s.sum2(5));
 }
