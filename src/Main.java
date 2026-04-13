@@ -1,6 +1,8 @@
 import CountDigits.ArmStrong;
 import CountDigits.DigitsInNumber;
 import CountDigits.PrintDivisors;
+import PrintN.Nnumbers;
+import PrintN.PrintName;
 import StarRectangle.Square;
 import StarRectangle.SymmetricVoid;
 import StarTriangle.Triangle;
@@ -89,4 +91,15 @@ void main() {
     PrintDivisors pd = new PrintDivisors();
 //    pd.Divisors(5);
     pd.Divisors(36);
+
+//    Print name n times recursion
+    PrintName pn = new PrintName();
+    pn.name(5);
+    pn.name1("Aryan Hooda", 0, 2);
+
+//    Print n numbers using recursion
+//    count should 1
+    Nnumbers nm = new Nnumbers();
+    nm.printNumbers(5, 1);
+    nm.printNumbers1(5, 1);
 }
