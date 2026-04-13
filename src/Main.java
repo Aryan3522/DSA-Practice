@@ -1,5 +1,6 @@
 import CountDigits.ArmStrong;
 import CountDigits.DigitsInNumber;
+import CountDigits.NumberFactorial;
 import StarRectangle.Square;
 import StarRectangle.SymmetricVoid;
 import StarTriangle.Triangle;
@@ -83,4 +84,8 @@ void main() {
 //    is ArmStrong
     ArmStrong ar = new ArmStrong();
     ar.isArmStrong(153);
+
+//    print factorial of any number
+    NumberFactorial nf = new NumberFactorial();
+    nf.Factorial(5);
 }
