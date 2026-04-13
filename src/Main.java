@@ -1,6 +1,6 @@
 import CountDigits.ArmStrong;
 import CountDigits.DigitsInNumber;
-import CountDigits.NumberFactorial;
+import CountDigits.PrintDivisors;
 import StarRectangle.Square;
 import StarRectangle.SymmetricVoid;
 import StarTriangle.Triangle;
@@ -85,7 +85,8 @@ void main() {
     ArmStrong ar = new ArmStrong();
     ar.isArmStrong(153);
 
-//    print factorial of any number
-    NumberFactorial nf = new NumberFactorial();
-    nf.Factorial(5);
+//    Print Divisors
+    PrintDivisors pd = new PrintDivisors();
+//    pd.Divisors(5);
+    pd.Divisors(36);
 }
