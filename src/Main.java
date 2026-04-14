@@ -6,6 +6,8 @@ import PrintN.PrintName;
 import StarRectangle.Square;
 import StarRectangle.SymmetricVoid;
 import StarTriangle.Triangle;
+import arrays.Reverse;
+import sum.Factorial;
 import sum.SumN;
 
 void main() {
@@ -113,4 +115,12 @@ void main() {
     s.sum1(5);
 //    using recursion
     System.out.println("recursive approach: " + s.sum2(5));
+    Factorial f = new Factorial();
+    f.FindFactorial(5);
+    System.out.println(f.FindFactorial2(5));
+
+//    reverse array
+    int[] myArr = new int[]{1, 2, 3, 4, 5};
+    Reverse r = new Reverse(myArr);
+    System.out.println(r);
 }
