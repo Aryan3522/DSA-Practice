@@ -122,5 +122,14 @@ void main() {
 //    reverse array
     int[] myArr = new int[]{1, 2, 3, 4, 5};
     Reverse r = new Reverse(myArr);
-    System.out.println(r);
+//    brute force
+    r.reverseArray(myArr);
+    r.reverseArray2(myArr);
+
+    List<Integer> arr = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
+    r.reverseArray3(arr);
+    for (int num : arr) {
+        System.out.print(num + " ");
+    }
+    System.out.println();
 }
