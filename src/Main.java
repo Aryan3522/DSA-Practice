@@ -7,6 +7,8 @@ import StarRectangle.Square;
 import StarRectangle.SymmetricVoid;
 import StarTriangle.Triangle;
 import arrays.Reverse;
+import fibonacci.FibonacciSeries;
+import strings.Palindrome;
 import sum.Factorial;
 import sum.SumN;
 
@@ -122,14 +124,14 @@ void main() {
 //    reverse array
     int[] myArr = new int[]{1, 2, 3, 4, 5};
     Reverse r = new Reverse(myArr);
-//    brute force
-    r.reverseArray(myArr);
-    r.reverseArray2(myArr);
+    System.out.println(r);
 
-    List<Integer> arr = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
-    r.reverseArray3(arr);
-    for (int num : arr) {
-        System.out.print(num + " ");
-    }
-    System.out.println();
+//    check if the string is a palindrome or not
+    Palindrome p = new Palindrome();
+    p.isPalindrome("121");
+    p.isPalindrome("ABCDCBA");
+
+//    fibonacci series
+    FibonacciSeries fs = new FibonacciSeries();
+    fs.fibonacci(7);
 }
