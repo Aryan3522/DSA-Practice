@@ -7,6 +7,7 @@ import StarRectangle.Square;
 import StarRectangle.SymmetricVoid;
 import StarTriangle.Triangle;
 import arrays.Reverse;
+import fibonacci.FibonacciSeries;
 import strings.Palindrome;
 import sum.Factorial;
 import sum.SumN;
@@ -129,4 +130,8 @@ void main() {
     Palindrome p = new Palindrome();
     p.isPalindrome("121");
     p.isPalindrome("ABCDCBA");
+
+//    fibonacci series
+    FibonacciSeries fs = new FibonacciSeries();
+    fs.fibonacci(7);
 }
