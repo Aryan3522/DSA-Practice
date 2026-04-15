@@ -42,6 +42,19 @@ public class DigitsInNumber {
         return false;
     }
 
+    public String isPalindrome(String str){
+        int start = 0;
+        int end = str.length() - 1;
+        while(start < end){
+            if(str.charAt(start) != str.charAt(end)){
+                System.out.println("Not Palindrome");
+                return "Not Palindrome";
+            }
+        }
+        System.out.println("Palindrome");
+        return "Palindrome";
+    }
+
 //    find gcd
     public int findGCD(int n1, int n2){
         System.out.println("Numbers are: " + n1 + " " + n2);
