@@ -1,10 +1,14 @@
 import CountDigits.ArmStrong;
 import CountDigits.DigitsInNumber;
-import CountDigits.PrimeNumber;
 import CountDigits.PrintDivisors;
+import PrintN.Nnumbers;
+import PrintN.PrintName;
 import StarRectangle.Square;
 import StarRectangle.SymmetricVoid;
 import StarTriangle.Triangle;
+import arrays.Reverse;
+import sum.Factorial;
+import sum.SumN;
 
 void main() {
     Square sq = new Square();
@@ -91,7 +95,32 @@ void main() {
 //    pd.Divisors(5);
     pd.Divisors(36);
 
-//    isPrime?
-    PrimeNumber pn = new PrimeNumber();
-    pn.isPrime(41);
+//    Print name n times recursion
+    PrintName pn = new PrintName();
+    pn.name(5);
+    pn.name1("Aryan Hooda", 0, 2);
+
+//    Print n numbers using recursion
+//    count should 1
+    Nnumbers nm = new Nnumbers();
+    nm.printNumbers(5, 1);
+    nm.printNumbers1(5, 1);
+    System.out.println();
+
+//    Sum of n numbers
+    SumN s = new SumN();
+//    using brute force
+    s.sum(5);
+//    using formula
+    s.sum1(5);
+//    using recursion
+    System.out.println("recursive approach: " + s.sum2(5));
+    Factorial f = new Factorial();
+    f.FindFactorial(5);
+    System.out.println(f.FindFactorial2(5));
+
+//    reverse array
+    int[] myArr = new int[]{1, 2, 3, 4, 5};
+    Reverse r = new Reverse(myArr);
+    System.out.println(r);
 }
