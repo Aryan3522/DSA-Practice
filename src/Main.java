@@ -7,6 +7,7 @@ import StarRectangle.Square;
 import StarRectangle.SymmetricVoid;
 import StarTriangle.Triangle;
 import arrays.Reverse;
+import strings.Palindrome;
 import sum.Factorial;
 import sum.SumN;
 
@@ -123,4 +124,9 @@ void main() {
     int[] myArr = new int[]{1, 2, 3, 4, 5};
     Reverse r = new Reverse(myArr);
     System.out.println(r);
+
+//    check if the string is a palindrome or not
+    Palindrome p = new Palindrome();
+    p.isPalindrome("121");
+    p.isPalindrome("ABCDCBA");
 }
