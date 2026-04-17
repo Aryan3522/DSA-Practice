@@ -139,4 +139,5 @@ void main() {
 //    hashing
     HashingTech h = new HashingTech();
     h.findNumOccurrences(new int[]{1,2,4,3,1}, 4);
+    h.Hashing();
 }
