@@ -42,6 +42,7 @@ public class HashingTech {
         for(int i = 0; i<arr.length;i++){
             hash[arr[i]]++;
         }
+//        fetching part
         for (int i = 0; i < q.length; i++) {
             System.out.println(q[i] + " occurs " + hash[q[i]] + " times");
         }
