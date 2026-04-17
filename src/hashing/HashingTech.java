@@ -22,7 +22,7 @@ public class HashingTech {
                 count = count + 1;
             }
         }
-        System.out.println(count);
+        System.out.println("count: "+count);
     }
 //    ===========================================
 
@@ -31,4 +31,19 @@ public class HashingTech {
 //    as we know a array starts from index 0 and goes till the number we provide
 //    that means a hasharray of size n+1 can be created
 //    after creating hash array check array[i] with number if the array index matches the number then increase that number's point in hasharray by 1
+
+    public void Hashing(){
+        int[] arr = new int[]{1,2,4,6,2,3,1};
+        int n = 12;
+        int[] q = new int[]{1,4,6,5};
+        int[] hash = new int[n+1];
+//        a new array of a specific size always take 0 as default for all the index numbers
+//        initializing part
+        for(int i = 0; i<arr.length;i++){
+            hash[arr[i]]++;
+        }
+        for (int i = 0; i < q.length; i++) {
+            System.out.println(q[i] + " occurs " + hash[q[i]] + " times");
+        }
+    }
 }
