@@ -8,6 +8,7 @@ import StarRectangle.SymmetricVoid;
 import StarTriangle.Triangle;
 import arrays.Reverse;
 import fibonacci.FibonacciSeries;
+import hashing.HashingTech;
 import strings.Palindrome;
 import sum.Factorial;
 import sum.SumN;
@@ -134,4 +135,8 @@ void main() {
 //    fibonacci series
     FibonacciSeries fs = new FibonacciSeries();
     fs.fibonacci(7);
+    System.out.println();
+//    hashing
+    HashingTech h = new HashingTech();
+    h.findNumOccurrences(new int[]{1,2,4,3,1}, 4);
 }
