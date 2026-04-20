@@ -7,6 +7,7 @@ import StarRectangle.Square;
 import StarRectangle.SymmetricVoid;
 import StarTriangle.Triangle;
 import arrays.Reverse;
+import arrays.Shuffle;
 import fibonacci.FibonacciSeries;
 import hashing.HashingTech;
 import strings.Palindrome;
@@ -138,6 +139,13 @@ void main() {
     System.out.println();
 //    hashing
     HashingTech h = new HashingTech();
-    h.findNumOccurrences(new int[]{1,2,4,3,1}, 4);
+    h.findNumOccurrences(new int[]{1, 2, 4, 3, 1}, 4);
     h.Hashing();
+    h.CharHashing();
+    System.out.println("---------------------------");
+    h.CharHash2();
+
+//    shuffle array
+    Shuffle sf = new Shuffle();
+    sf.shuffle(new int[]{1, 2, 5, 4, 3, 6}, 3);
 }
