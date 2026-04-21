@@ -1,4 +1,5 @@
 import CountDigits.ArmStrong;
+import CountDigits.ConsecutiveNum;
 import CountDigits.DigitsInNumber;
 import CountDigits.PrintDivisors;
 import PrintN.Nnumbers;
@@ -148,4 +149,8 @@ void main() {
 //    shuffle array
     Shuffle sf = new Shuffle();
     sf.shuffle(new int[]{1, 2, 5, 4, 3, 6}, 3);
+
+//    count max consecutive numbers
+    ConsecutiveNum cn = new ConsecutiveNum();
+    cn.maxConsecutive(new int[]{1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1});
 }

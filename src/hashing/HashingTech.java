@@ -82,7 +82,7 @@ public class HashingTech {
         }
     }
 
-    public void CharHash2(){
+    public void CharHash2() {
         String[] arr = {
                 "a", "b", "c", "d", "e", "f", "g", "h",
                 "a", "a", "b", "c", "d", "e", "f", "g",
