@@ -7,6 +7,7 @@ import PrintN.PrintName;
 import StarRectangle.Square;
 import StarRectangle.SymmetricVoid;
 import StarTriangle.Triangle;
+import arrays.Concatenate;
 import arrays.Reverse;
 import arrays.Shuffle;
 import fibonacci.FibonacciSeries;
@@ -146,6 +147,8 @@ void main() {
     System.out.println("---------------------------");
     h.CharHash2();
 
+    h.TwoSumHash(new int[]{1,2,7,4,9}, 9);
+
 //    shuffle array
     Shuffle sf = new Shuffle();
     sf.shuffle(new int[]{1, 2, 5, 4, 3, 6}, 3);
@@ -153,4 +156,8 @@ void main() {
 //    count max consecutive numbers
     ConsecutiveNum cn = new ConsecutiveNum();
     cn.maxConsecutive(new int[]{1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1});
+
+//    concatenate two arrays
+    Concatenate cnc = new Concatenate();
+    cnc.Concat(new int[]{1, 0, 1});
 }

@@ -101,4 +101,20 @@ public class HashingTech {
             System.out.println(q[i] + " -> " + hashArr[index]);
         }
     }
+
+    //    Given an array of integers nums and an integer target, return indices of two numbers such that they add up to target.
+//    Example:
+//    Input: nums = [2,7,11,15], target = 9
+//    Output: [0,1]
+    public void TwoSumHash(int[] nums, int target) {
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[i] + nums[j] == target) {
+                    System.out.println("the indexes are: " + i + " " + j);
+                    System.out.println("nums[i] is: " +  nums[i] + " nums[j] is: " + nums[j]);
+                    System.out.println(target + " = " + (nums[i] + nums[j]));
+                }
+            }
+        }
+    }
 }
