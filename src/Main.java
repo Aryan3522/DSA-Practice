@@ -147,6 +147,8 @@ void main() {
     System.out.println("---------------------------");
     h.CharHash2();
 
+    h.TwoSumHash(new int[]{1,2,7,4,9}, 9);
+
 //    shuffle array
     Shuffle sf = new Shuffle();
     sf.shuffle(new int[]{1, 2, 5, 4, 3, 6}, 3);
